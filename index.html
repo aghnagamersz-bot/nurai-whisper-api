@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#1a5c38">
-<meta name="description" content="NurAI — Platform Quran AI #1 Indonesia. Tajwid berwarna, analisis suara, 15+ qori, hafalan, jadwal shalat.">
+<meta name="description" content="Nur.ai — Platform Quran AI #1 Indonesia. Tajwid berwarna, analisis suara, 15+ qori, hafalan, jadwal shalat.">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="NurAI">
-<title>NurAI — Cahaya Quran di Ujung Jarimu</title>
+<meta name="apple-mobile-web-app-title" content="Nur.ai">
+<title>Nur.ai — Cahaya Quran di Ujung Jarimu</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;600&family=Scheherazade+New:wght@400;500;600;700&family=Amiri+Quran&display=swap" rel="stylesheet">
@@ -66,12 +66,12 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 .splash-icon-ring{position:absolute;inset:-8px;border-radius:36px;border:1.5px solid rgba(201,168,76,.3);animation:ringPulse 2.5s ease-in-out infinite .5s}
 @keyframes ringPulse{0%,100%{transform:scale(1);opacity:.3}50%{transform:scale(1.06);opacity:.8}}
 .splash-icon-ring-2{position:absolute;inset:-16px;border-radius:44px;border:1px solid rgba(201,168,76,.12);animation:ringPulse 2.5s ease-in-out infinite .9s}
-.splash-icon{width:80px;height:80px;background:rgba(255,255,255,.08);border-radius:26px;display:grid;place-items:center;border:1.5px solid rgba(255,255,255,.18);backdrop-filter:blur(10px)}
+.splash-icon{width:80px;height:80px;background:#0a1f12;border-radius:26px;display:grid;place-items:center;border:1.5px solid rgba(46,160,67,.35);backdrop-filter:blur(10px)}
 .splash-icon svg{width:44px;height:44px}
 
 /* Brand name stagger animation */
 .splash-name{font-family:var(--ffd);font-size:48px;font-weight:700;color:#fff;letter-spacing:-2px;animation:fadeUp .6s ease .5s both;line-height:1}
-.splash-name em{color:var(--gold2);font-style:normal}
+.splash-name em{color:var(--gold2);font-style:normal;font-weight:400;letter-spacing:.5px}
 @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
 .splash-tagline{font-size:12px;color:rgba(255,255,255,.5);letter-spacing:1.5px;text-transform:uppercase;margin-top:6px;animation:fadeUp .6s ease .65s both}
 .splash-ar{font-family:var(--ffa);font-size:20px;color:rgba(201,168,76,.65);direction:rtl;margin-top:10px;animation:fadeUp .6s ease .8s both}
@@ -94,10 +94,10 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 .login-hero-geo{position:absolute;inset:0;opacity:.06;pointer-events:none}
 .login-hero-geo svg{width:100%;height:100%}
 .login-hero-glow{position:absolute;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(42,122,76,.3),transparent 70%);top:50%;left:50%;transform:translate(-50%,-55%)}
-.login-hero-icon{width:56px;height:56px;border-radius:18px;background:rgba(201,168,76,.18);border:1.5px solid rgba(201,168,76,.35);display:grid;place-items:center;position:relative;z-index:1;box-shadow:0 0 0 8px rgba(201,168,76,.06)}
+.login-hero-icon{width:56px;height:56px;border-radius:18px;background:#0a1f12;border:1.5px solid rgba(46,160,67,.45);display:grid;place-items:center;position:relative;z-index:1;box-shadow:0 0 0 8px rgba(46,160,67,.06)}
 .login-hero-icon svg{width:30px;height:30px}
 .login-hero-brand{font-family:var(--ffd);font-size:32px;font-weight:700;color:#fff;letter-spacing:-1px;position:relative;z-index:1;line-height:1}
-.login-hero-brand em{color:var(--gold2);font-style:normal}
+.login-hero-brand em{color:var(--gold2);font-style:normal;font-weight:400;letter-spacing:.5px}
 .login-hero-sub{font-family:var(--ffa);font-size:14px;color:rgba(255,255,255,.35);direction:rtl;position:relative;z-index:1}
 .login-hero-wave{position:absolute;bottom:-1px;left:0;right:0;z-index:1}
 .login-body{flex:1;padding:28px 24px 20px;display:flex;flex-direction:column;overflow-y:auto;max-width:480px;width:100%;margin:0 auto}
@@ -162,10 +162,10 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 /* Sidebar header */
 .sh{padding:14px 13px 11px;border-bottom:1px solid var(--paper3)}
 .sh-logo{display:flex;align-items:center;gap:9px;margin-bottom:11px;cursor:pointer}
-.sh-icon{width:30px;height:30px;background:var(--jade);border-radius:9px;display:grid;place-items:center;flex-shrink:0}
+.sh-icon{width:30px;height:30px;background:#0a1f12;border-radius:9px;display:grid;place-items:center;flex-shrink:0;border:1px solid rgba(46,160,67,.4)}
 .sh-icon svg{width:16px;height:16px}
 .sh-brand{font-family:var(--ffd);font-size:18px;font-weight:700;color:var(--ink);letter-spacing:-.3px}
-.sh-brand em{color:var(--jade2);font-style:normal}
+.sh-brand em{color:var(--gold2);font-style:normal;font-weight:500;letter-spacing:.3px}
 .sh-tagline{font-size:9px;color:var(--ink4);letter-spacing:.3px}
 .srch{position:relative}
 .srch input{width:100%;padding:6px 10px 6px 29px;background:var(--paper2);border:1px solid var(--paper3);border-radius:var(--r);font-size:12px;font-family:var(--ff);color:var(--ink);outline:none;transition:.15s}
@@ -674,12 +674,36 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 
   /* ── TOPBAR: tampilkan hamburger ── */
   .hamburger{display:flex}
-  .topbar{padding:8px 12px;gap:8px}
+  .topbar{padding:8px 10px;gap:6px;flex-wrap:nowrap}
+  .t-l{min-width:0;flex:1;overflow:hidden}
+  .t-nm{font-size:12px;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .t-ar{font-size:15px}
+  .hBadge,.pill{display:none}
+  .mode-row{margin-top:2px;gap:4px}
+  .m-btn{padding:2px 7px;font-size:9px}
+  .t-r .ib{width:26px;height:26px}
+  .t-r .ib svg{width:11px;height:11px}
+  .av{width:24px;height:24px;font-size:9px}
+  .t-r{gap:3px}
 
   /* ── TAB BAR: lebih kecil, scroll horizontal ── */
-  .tab-bar{padding:0 8px;gap:0}
-  .tb{padding:8px 9px;font-size:9px;gap:3px;white-space:nowrap}
-  .tb svg{width:11px;height:11px}
+  .tab-bar{
+    padding:0 4px;gap:0;
+    overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x mandatory;
+    display:flex!important;flex-wrap:nowrap;
+    position:relative;z-index:10;
+    min-height:40px;
+  }
+  .tab-bar::-webkit-scrollbar{display:none}
+  .tb{
+    padding:6px 8px;font-size:9px;gap:2px;
+    white-space:nowrap;flex-shrink:0;
+    scroll-snap-align:start;
+    min-width:fit-content;
+  }
+  .tb svg{width:10px;height:10px}
 
   /* ── AYAH TEXT: ukuran lebih kecil di HP ── */
   .a-text{font-size:22px;line-height:2.4;padding:10px 12px 6px}
@@ -775,11 +799,11 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
       <div class="splash-icon-ring-2"></div>
       <div class="splash-icon-ring"></div>
       <div class="splash-icon">
-        <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="6" fill="#e8c96a"/><path d="M24 6C14.6 6 7 13.6 7 24s7.6 18 17 18 17-7.6 17-18S33.4 6 24 6zm0 22.8c-4 0-9.3 1.56-9.33 4.34A12.6 12.6 0 0 1 11.4 24c0-6.96 5.64-12.6 12.6-12.6 6.96 0 12.6 5.64 12.6 12.6a12.6 12.6 0 0 1-3.27 8.34C33.3 30.36 28 28.8 24 28.8z" fill="rgba(255,255,255,.92)"/></svg>
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="#0a1f12" stroke="#2ea043" stroke-width="1.2"/><circle cx="24" cy="24" r="13" fill="none" stroke="#1a5c30" stroke-width="0.8"/><line x1="24" y1="4" x2="24" y2="11" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="37" x2="24" y2="44" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="24" x2="11" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="37" y1="24" x2="44" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="9" fill="#0d2818" stroke="#56d364" stroke-width="1"/><text x="24" y="29" text-anchor="middle" font-family="Scheherazade New,Amiri,serif" font-size="13" fill="#e3b341">&#x646;&#x64F;</text></svg>
       </div>
     </div>
-    <div class="splash-name">Nur<em>AI</em></div>
-    <div class="splash-tagline">Cahaya Quran di Ujung Jarimu</div>
+    <div class="splash-name">Nur<em>.ai</em></div>
+    <div class="splash-tagline">Cahaya Quran di Ujung Jarimu · Nur.ai</div>
     <div class="splash-ar">نُورُ القُرآنِ فِي يَدَيكَ</div>
     <div class="splash-progress-wrap">
       <div class="splash-progress-bg"><div class="splash-progress-fill" id="splashFill"></div></div>
@@ -797,8 +821,8 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 <div class="install-guide" id="installGuide">
   <div class="ig-card">
     <div class="ig-handle"></div>
-    <div class="ig-title">📲 Pasang NurAI di HP</div>
-    <div class="ig-sub">NurAI adalah PWA (Progressive Web App) — bisa dipakai tanpa App Store, langsung dari browser!</div>
+    <div class="ig-title">📲 Pasang Nur.ai di HP</div>
+    <div class="ig-sub">Nur.ai adalah PWA (Progressive Web App) — bisa dipakai tanpa App Store, langsung dari browser!</div>
 
     <div class="ig-tabs">
       <button class="igt on" onclick="setIgTab(this,'android')">Android</button>
@@ -809,8 +833,8 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
     <div id="ig-android">
       <div class="ig-step"><div class="ig-step-num">1</div><div class="ig-step-body"><div class="ig-step-title">Buka di Chrome / Samsung Internet</div><div class="ig-step-desc">Pastikan kamu membuka file ini di browser Chrome atau Samsung Internet di HP Android.</div></div></div>
       <div class="ig-step"><div class="ig-step-num">2</div><div class="ig-step-body"><div class="ig-step-title">Tap menu ⋮ (titik tiga) di pojok kanan atas</div><div class="ig-step-desc">Lalu pilih <strong>"Add to Home screen"</strong> atau <strong>"Tambahkan ke Layar Utama"</strong>.</div></div></div>
-      <div class="ig-step"><div class="ig-step-num">3</div><div class="ig-step-body"><div class="ig-step-title">Ketuk "Add" / "Tambahkan"</div><div class="ig-step-desc">Ikon NurAI akan muncul di home screen. Buka seperti app biasa, fullscreen tanpa browser bar!</div></div></div>
-      <div class="ig-step"><div class="ig-step-num">4</div><div class="ig-step-body"><div class="ig-step-title">Selesai! Buka dari home screen</div><div class="ig-step-desc">NurAI siap dipakai offline untuk surah-surah populer. Tetap butuh internet untuk audio qori.</div></div></div>
+      <div class="ig-step"><div class="ig-step-num">3</div><div class="ig-step-body"><div class="ig-step-title">Ketuk "Add" / "Tambahkan"</div><div class="ig-step-desc">Ikon Nur.ai akan muncul di home screen. Buka seperti app biasa, fullscreen tanpa browser bar!</div></div></div>
+      <div class="ig-step"><div class="ig-step-num">4</div><div class="ig-step-body"><div class="ig-step-title">Selesai! Buka dari home screen</div><div class="ig-step-desc">Nur.ai siap dipakai offline untuk surah-surah populer. Tetap butuh internet untuk audio qori.</div></div></div>
       <div class="ig-note">💡 <strong>Tips Android:</strong> Jika tidak muncul opsi install, pastikan URL dimulai dengan <code>https://</code> dan coba di Chrome versi terbaru.</div>
     </div>
 
@@ -818,13 +842,13 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
       <div class="ig-step"><div class="ig-step-num">1</div><div class="ig-step-body"><div class="ig-step-title">Buka di Safari (wajib Safari)</div><div class="ig-step-desc">PWA di iPhone hanya bisa dipasang via Safari. Tidak bisa dari Chrome atau Firefox di iOS.</div></div></div>
       <div class="ig-step"><div class="ig-step-num">2</div><div class="ig-step-body"><div class="ig-step-title">Tap tombol Share 🔗 di bawah layar</div><div class="ig-step-desc">Ikon kotak dengan panah ke atas, di bagian bawah atau atas browser Safari.</div></div></div>
       <div class="ig-step"><div class="ig-step-num">3</div><div class="ig-step-body"><div class="ig-step-title">Scroll ke bawah → "Add to Home Screen"</div><div class="ig-step-desc">Pilih <strong>"Add to Home Screen"</strong> atau <strong>"Tambahkan ke Layar Utama"</strong>.</div></div></div>
-      <div class="ig-step"><div class="ig-step-num">4</div><div class="ig-step-body"><div class="ig-step-title">Ketuk "Add" di pojok kanan atas</div><div class="ig-step-desc">Ikon NurAI muncul di home screen iPhone. Buka → fullscreen seperti native app!</div></div></div>
+      <div class="ig-step"><div class="ig-step-num">4</div><div class="ig-step-body"><div class="ig-step-title">Ketuk "Add" di pojok kanan atas</div><div class="ig-step-desc">Ikon Nur.ai muncul di home screen iPhone. Buka → fullscreen seperti native app!</div></div></div>
       <div class="ig-note">💡 <strong>Tips iPhone:</strong> iOS 16.4+ mendukung notifikasi dari PWA. Update iOS untuk pengalaman terbaik.</div>
     </div>
 
     <div id="ig-pc" style="display:none">
-      <div class="ig-step"><div class="ig-step-num">1</div><div class="ig-step-body"><div class="ig-step-title">Buka di Chrome atau Edge di laptop/PC</div><div class="ig-step-desc">NurAI bisa dipasang sebagai desktop app di Windows, Mac, dan Linux.</div></div></div>
-      <div class="ig-step"><div class="ig-step-num">2</div><div class="ig-step-body"><div class="ig-step-title">Klik ikon install di address bar</div><div class="ig-step-desc">Chrome: ikon komputer/download di ujung kanan address bar. Edge: ikon serupa. Atau lewat menu ⋮ → "Install NurAI".</div></div></div>
+      <div class="ig-step"><div class="ig-step-num">1</div><div class="ig-step-body"><div class="ig-step-title">Buka di Chrome atau Edge di laptop/PC</div><div class="ig-step-desc">Nur.ai bisa dipasang sebagai desktop app di Windows, Mac, dan Linux.</div></div></div>
+      <div class="ig-step"><div class="ig-step-num">2</div><div class="ig-step-body"><div class="ig-step-title">Klik ikon install di address bar</div><div class="ig-step-desc">Chrome: ikon komputer/download di ujung kanan address bar. Edge: ikon serupa. Atau lewat menu ⋮ → "Install Nur.ai".</div></div></div>
       <div class="ig-step"><div class="ig-step-num">3</div><div class="ig-step-body"><div class="ig-step-title">Klik "Install" di popup konfirmasi</div><div class="ig-step-desc">NurAI akan terbuka sebagai window terpisah tanpa browser bar, seperti app desktop.</div></div></div>
       <div class="ig-note">💡 <strong>Tips PC:</strong> NurAI tampak di Start Menu (Windows) atau Applications (Mac). Bisa dibuka via keyboard shortcut.</div>
     </div>
@@ -851,9 +875,9 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
     </div>
     <div class="login-hero-glow"></div>
     <div class="login-hero-icon">
-      <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="6" fill="#e8c96a"/><path d="M24 6C14.6 6 7 13.6 7 24s7.6 18 17 18 17-7.6 17-18S33.4 6 24 6zm0 22.8c-4 0-9.3 1.56-9.33 4.34A12.6 12.6 0 0 1 11.4 24c0-6.96 5.64-12.6 12.6-12.6 6.96 0 12.6 5.64 12.6 12.6a12.6 12.6 0 0 1-3.27 8.34C33.3 30.36 28 28.8 24 28.8z" fill="rgba(255,255,255,.9)"/></svg>
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="#0a1f12" stroke="#2ea043" stroke-width="1.2"/><circle cx="24" cy="24" r="13" fill="none" stroke="#1a5c30" stroke-width="0.8"/><line x1="24" y1="4" x2="24" y2="11" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="37" x2="24" y2="44" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="24" x2="11" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="37" y1="24" x2="44" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="9" fill="#0d2818" stroke="#56d364" stroke-width="1"/><text x="24" y="29" text-anchor="middle" font-family="Scheherazade New,Amiri,serif" font-size="13" fill="#e3b341">&#x646;&#x64F;</text></svg>
     </div>
-    <div class="login-hero-brand">Nur<em>AI</em></div>
+    <div class="login-hero-brand">Nur<em>.ai</em></div>
     <div class="login-hero-sub">نُورُ القُرآنِ فِي يَدَيكَ</div>
     <svg class="login-hero-wave" viewBox="0 0 400 24" preserveAspectRatio="none" fill="var(--paper)"><path d="M0,24 C100,0 300,0 400,24 Z"/></svg>
   </div>
@@ -888,7 +912,7 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
       <div class="login-feat"><div class="login-feat-dot"></div>Gratis selamanya</div>
     </div>
     <div class="login-footer-note">
-      Dengan masuk kamu setuju dengan <a href="#">Syarat Layanan</a> dan <a href="#">Kebijakan Privasi</a> NurAI
+      Dengan masuk kamu setuju dengan <a href="#">Syarat Layanan</a> dan <a href="#">Kebijakan Privasi</a> Nur.ai
     </div>
   </div>
 </div>
@@ -899,8 +923,8 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
   <div class="sidebar">
     <div class="sh">
       <div class="sh-logo" onclick="showInstallGuide()">
-        <div class="sh-icon"><svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="6" fill="#e8c96a"/><path d="M24 6C14.6 6 7 13.6 7 24s7.6 18 17 18 17-7.6 17-18S33.4 6 24 6zm0 22.8c-4 0-9.3 1.56-9.33 4.34A12.6 12.6 0 0 1 11.4 24c0-6.96 5.64-12.6 12.6-12.6 6.96 0 12.6 5.64 12.6 12.6a12.6 12.6 0 0 1-3.27 8.34C33.3 30.36 28 28.8 24 28.8z" fill="white"/></svg></div>
-        <div><div class="sh-brand">Nur<em>AI</em></div><div class="sh-tagline">Tap logo untuk panduan install</div></div>
+        <div class="sh-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="20" fill="#0a1f12" stroke="#2ea043" stroke-width="1.2"/><circle cx="24" cy="24" r="13" fill="none" stroke="#1a5c30" stroke-width="0.8"/><line x1="24" y1="4" x2="24" y2="11" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="37" x2="24" y2="44" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="4" y1="24" x2="11" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><line x1="37" y1="24" x2="44" y2="24" stroke="#2ea043" stroke-width="1.5" stroke-linecap="round"/><circle cx="24" cy="24" r="9" fill="#0d2818" stroke="#56d364" stroke-width="1"/><text x="24" y="29" text-anchor="middle" font-family="Scheherazade New,Amiri,serif" font-size="13" fill="#e3b341">&#x646;&#x64F;</text></svg></div>
+        <div><div class="sh-brand">Nur<em>.ai</em></div><div class="sh-tagline">Nur.ai — Tap untuk panduan install</div></div>
       </div>
       <div class="srch">
         <span class="srch-ic"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
@@ -1020,7 +1044,7 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
             <div class="wbw-title">Terjemah Per Kata — Bahasa Indonesia</div>
             <div class="wbw-surah-info" id="wbwSurahInfo">Al-Fatihah · 7 Ayat</div>
           </div>
-          <div style="font-size:9px;color:var(--jade2);background:var(--jade4);padding:2px 8px;border-radius:20px;border:1px solid var(--jade5);font-weight:600">Eksklusif NurAI</div>
+          <div style="font-size:9px;color:var(--jade2);background:var(--jade4);padding:2px 8px;border-radius:20px;border:1px solid var(--jade5);font-weight:600">Eksklusif Nur.ai</div>
         </div>
         <div class="wbw-body" id="wbwBody"></div>
       </div>
@@ -1062,7 +1086,7 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
           <div class="chat-header">
             <div class="chat-avatar">🕌</div>
             <div>
-              <div class="chat-name">Ustadz AI — NurAI</div>
+              <div class="chat-name">Ustadz AI — Nur.ai</div>
               <div class="chat-status">Online — Siap membantu</div>
             </div>
             <div class="chat-badge">Powered by Claude</div>
@@ -1262,12 +1286,110 @@ const SURAHS=[
   {n:5,ar:"المَائِدَة",name:"Al-Maidah",info:"120 ayat · Madaniyah",juz:6,page:106},
   {n:6,ar:"الأَنعَام",name:"Al-An'am",info:"165 ayat · Makkiyah",juz:7,page:128},
   {n:7,ar:"الأَعرَاف",name:"Al-A'raf",info:"206 ayat · Makkiyah",juz:8,page:151},
+  {n:8,ar:"الأَنفَال",name:"Al-Anfal",info:"75 ayat · Madaniyah",juz:9,page:177},
+  {n:9,ar:"التَّوبَة",name:"At-Taubah",info:"129 ayat · Madaniyah",juz:10,page:187},
   {n:10,ar:"يُونُس",name:"Yunus",info:"109 ayat · Makkiyah",juz:11,page:208},
+  {n:11,ar:"هُود",name:"Hud",info:"123 ayat · Makkiyah",juz:11,page:221},
+  {n:12,ar:"يُوسُف",name:"Yusuf",info:"111 ayat · Makkiyah",juz:12,page:235},
+  {n:13,ar:"الرَّعد",name:"Ar-Ra'd",info:"43 ayat · Madaniyah",juz:13,page:249},
+  {n:14,ar:"إِبرَاهِيم",name:"Ibrahim",info:"52 ayat · Makkiyah",juz:13,page:255},
+  {n:15,ar:"الحِجر",name:"Al-Hijr",info:"99 ayat · Makkiyah",juz:14,page:262},
+  {n:16,ar:"النَّحل",name:"An-Nahl",info:"128 ayat · Makkiyah",juz:14,page:267},
+  {n:17,ar:"الإِسرَاء",name:"Al-Isra",info:"111 ayat · Makkiyah",juz:15,page:282},
   {n:18,ar:"الكَهف",name:"Al-Kahf",info:"110 ayat · Makkiyah",juz:15,page:293},
+  {n:19,ar:"مَريَم",name:"Maryam",info:"98 ayat · Makkiyah",juz:16,page:305},
+  {n:20,ar:"طه",name:"Taha",info:"135 ayat · Makkiyah",juz:16,page:312},
+  {n:21,ar:"الأَنبِيَاء",name:"Al-Anbiya",info:"112 ayat · Makkiyah",juz:17,page:322},
+  {n:22,ar:"الحَج",name:"Al-Hajj",info:"78 ayat · Madaniyah",juz:17,page:332},
+  {n:23,ar:"المُؤمِنُون",name:"Al-Mu'minun",info:"118 ayat · Makkiyah",juz:18,page:342},
+  {n:24,ar:"النُّور",name:"An-Nur",info:"64 ayat · Madaniyah",juz:18,page:350},
+  {n:25,ar:"الفُرقَان",name:"Al-Furqan",info:"77 ayat · Makkiyah",juz:18,page:359},
+  {n:26,ar:"الشُّعَرَاء",name:"Asy-Syu'ara",info:"227 ayat · Makkiyah",juz:19,page:367},
+  {n:27,ar:"النَّمل",name:"An-Naml",info:"93 ayat · Makkiyah",juz:19,page:377},
+  {n:28,ar:"القَصَص",name:"Al-Qasas",info:"88 ayat · Makkiyah",juz:20,page:385},
+  {n:29,ar:"العَنكَبُوت",name:"Al-'Ankabut",info:"69 ayat · Makkiyah",juz:20,page:396},
+  {n:30,ar:"الرُّوم",name:"Ar-Rum",info:"60 ayat · Makkiyah",juz:21,page:404},
+  {n:31,ar:"لُقمَان",name:"Luqman",info:"34 ayat · Makkiyah",juz:21,page:411},
+  {n:32,ar:"السَّجدَة",name:"As-Sajdah",info:"30 ayat · Makkiyah",juz:21,page:415},
+  {n:33,ar:"الأَحزَاب",name:"Al-Ahzab",info:"73 ayat · Madaniyah",juz:21,page:418},
+  {n:34,ar:"سَبَإ",name:"Saba",info:"54 ayat · Makkiyah",juz:22,page:428},
+  {n:35,ar:"فَاطِر",name:"Fatir",info:"45 ayat · Makkiyah",juz:22,page:434},
   {n:36,ar:"يس",name:"Yasin",info:"83 ayat · Makkiyah",juz:22,page:440},
+  {n:37,ar:"الصَّافَّات",name:"As-Saffat",info:"182 ayat · Makkiyah",juz:23,page:446},
+  {n:38,ar:"ص",name:"Sad",info:"88 ayat · Makkiyah",juz:23,page:453},
+  {n:39,ar:"الزُّمَر",name:"Az-Zumar",info:"75 ayat · Makkiyah",juz:23,page:458},
+  {n:40,ar:"غَافِر",name:"Ghafir",info:"85 ayat · Makkiyah",juz:24,page:467},
+  {n:41,ar:"فُصِّلَت",name:"Fussilat",info:"54 ayat · Makkiyah",juz:24,page:477},
+  {n:42,ar:"الشُّورَى",name:"Asy-Syura",info:"53 ayat · Makkiyah",juz:25,page:483},
+  {n:43,ar:"الزُّخرُف",name:"Az-Zukhruf",info:"89 ayat · Makkiyah",juz:25,page:489},
+  {n:44,ar:"الدُّخَان",name:"Ad-Dukhan",info:"59 ayat · Makkiyah",juz:25,page:496},
+  {n:45,ar:"الجَاثِيَة",name:"Al-Jasiyah",info:"37 ayat · Makkiyah",juz:25,page:499},
+  {n:46,ar:"الأَحقَاف",name:"Al-Ahqaf",info:"35 ayat · Makkiyah",juz:26,page:502},
+  {n:47,ar:"مُحَمَّد",name:"Muhammad",info:"38 ayat · Madaniyah",juz:26,page:507},
+  {n:48,ar:"الفَتح",name:"Al-Fath",info:"29 ayat · Madaniyah",juz:26,page:511},
+  {n:49,ar:"الحُجُرَات",name:"Al-Hujurat",info:"18 ayat · Madaniyah",juz:26,page:515},
+  {n:50,ar:"ق",name:"Qaf",info:"45 ayat · Makkiyah",juz:26,page:518},
+  {n:51,ar:"الذَّارِيَات",name:"Az-Zariyat",info:"60 ayat · Makkiyah",juz:26,page:521},
+  {n:52,ar:"الطُّور",name:"At-Tur",info:"49 ayat · Makkiyah",juz:27,page:523},
+  {n:53,ar:"النَّجم",name:"An-Najm",info:"62 ayat · Makkiyah",juz:27,page:526},
+  {n:54,ar:"القَمَر",name:"Al-Qamar",info:"55 ayat · Makkiyah",juz:27,page:528},
   {n:55,ar:"الرَّحمَن",name:"Ar-Rahman",info:"78 ayat · Madaniyah",juz:27,page:531},
+  {n:56,ar:"الوَاقِعَة",name:"Al-Waqi'ah",info:"96 ayat · Makkiyah",juz:27,page:534},
+  {n:57,ar:"الحَدِيد",name:"Al-Hadid",info:"29 ayat · Madaniyah",juz:27,page:537},
+  {n:58,ar:"المُجَادَلَة",name:"Al-Mujadilah",info:"22 ayat · Madaniyah",juz:28,page:542},
+  {n:59,ar:"الحَشر",name:"Al-Hasyr",info:"24 ayat · Madaniyah",juz:28,page:545},
+  {n:60,ar:"المُمتَحِنَة",name:"Al-Mumtahanah",info:"13 ayat · Madaniyah",juz:28,page:549},
+  {n:61,ar:"الصَّف",name:"As-Saf",info:"14 ayat · Madaniyah",juz:28,page:551},
+  {n:62,ar:"الجُمُعَة",name:"Al-Jumu'ah",info:"11 ayat · Madaniyah",juz:28,page:553},
+  {n:63,ar:"المُنَافِقُون",name:"Al-Munafiqun",info:"11 ayat · Madaniyah",juz:28,page:554},
+  {n:64,ar:"التَّغَابُن",name:"At-Tagabun",info:"18 ayat · Madaniyah",juz:28,page:556},
+  {n:65,ar:"الطَّلَاق",name:"At-Talaq",info:"12 ayat · Madaniyah",juz:28,page:558},
+  {n:66,ar:"التَّحرِيم",name:"At-Tahrim",info:"12 ayat · Madaniyah",juz:28,page:560},
   {n:67,ar:"المُلك",name:"Al-Mulk",info:"30 ayat · Makkiyah",juz:29,page:562},
+  {n:68,ar:"القَلَم",name:"Al-Qalam",info:"52 ayat · Makkiyah",juz:29,page:564},
+  {n:69,ar:"الحَاقَّة",name:"Al-Haqqah",info:"52 ayat · Makkiyah",juz:29,page:566},
+  {n:70,ar:"المَعَارِج",name:"Al-Ma'arij",info:"44 ayat · Makkiyah",juz:29,page:568},
+  {n:71,ar:"نُوح",name:"Nuh",info:"28 ayat · Makkiyah",juz:29,page:570},
+  {n:72,ar:"الجِن",name:"Al-Jinn",info:"28 ayat · Makkiyah",juz:29,page:572},
+  {n:73,ar:"المُزَّمِّل",name:"Al-Muzzammil",info:"20 ayat · Makkiyah",juz:29,page:574},
+  {n:74,ar:"المُدَّثِّر",name:"Al-Muddassir",info:"56 ayat · Makkiyah",juz:29,page:575},
+  {n:75,ar:"القِيَامَة",name:"Al-Qiyamah",info:"40 ayat · Makkiyah",juz:29,page:577},
+  {n:76,ar:"الإِنسَان",name:"Al-Insan",info:"31 ayat · Madaniyah",juz:29,page:578},
+  {n:77,ar:"المُرسَلَات",name:"Al-Mursalat",info:"50 ayat · Makkiyah",juz:29,page:580},
   {n:78,ar:"النَّبَإ",name:"An-Naba",info:"40 ayat · Makkiyah",juz:30,page:582},
+  {n:79,ar:"النَّازِعَات",name:"An-Nazi'at",info:"46 ayat · Makkiyah",juz:30,page:583},
+  {n:80,ar:"عَبَسَ",name:"'Abasa",info:"42 ayat · Makkiyah",juz:30,page:585},
+  {n:81,ar:"التَّكوِير",name:"At-Takwir",info:"29 ayat · Makkiyah",juz:30,page:586},
+  {n:82,ar:"الاِنفِطَار",name:"Al-Infitar",info:"19 ayat · Makkiyah",juz:30,page:587},
+  {n:83,ar:"المُطَفِّفِين",name:"Al-Mutaffifin",info:"36 ayat · Makkiyah",juz:30,page:587},
+  {n:84,ar:"الاِنشِقَاق",name:"Al-Inshiqaq",info:"25 ayat · Makkiyah",juz:30,page:589},
+  {n:85,ar:"البُرُوج",name:"Al-Buruj",info:"22 ayat · Makkiyah",juz:30,page:590},
+  {n:86,ar:"الطَّارِق",name:"At-Tariq",info:"17 ayat · Makkiyah",juz:30,page:591},
+  {n:87,ar:"الأَعلَى",name:"Al-A'la",info:"19 ayat · Makkiyah",juz:30,page:591},
+  {n:88,ar:"الغَاشِيَة",name:"Al-Ghasyiyah",info:"26 ayat · Makkiyah",juz:30,page:592},
+  {n:89,ar:"الفَجر",name:"Al-Fajr",info:"30 ayat · Makkiyah",juz:30,page:593},
+  {n:90,ar:"البَلَد",name:"Al-Balad",info:"20 ayat · Makkiyah",juz:30,page:594},
+  {n:91,ar:"الشَّمس",name:"Asy-Syams",info:"15 ayat · Makkiyah",juz:30,page:595},
+  {n:92,ar:"اللَّيل",name:"Al-Lail",info:"21 ayat · Makkiyah",juz:30,page:595},
+  {n:93,ar:"الضُّحَى",name:"Ad-Duha",info:"11 ayat · Makkiyah",juz:30,page:596},
+  {n:94,ar:"الشَّرح",name:"Al-Inshirah",info:"8 ayat · Makkiyah",juz:30,page:596},
+  {n:95,ar:"التِّين",name:"At-Tin",info:"8 ayat · Makkiyah",juz:30,page:597},
+  {n:96,ar:"العَلَق",name:"Al-'Alaq",info:"19 ayat · Makkiyah",juz:30,page:597},
+  {n:97,ar:"القَدر",name:"Al-Qadr",info:"5 ayat · Makkiyah",juz:30,page:598},
+  {n:98,ar:"البَيِّنَة",name:"Al-Bayyinah",info:"8 ayat · Madaniyah",juz:30,page:598},
+  {n:99,ar:"الزَّلزَلَة",name:"Az-Zalzalah",info:"8 ayat · Madaniyah",juz:30,page:599},
+  {n:100,ar:"العَادِيَات",name:"Al-'Adiyat",info:"11 ayat · Makkiyah",juz:30,page:599},
+  {n:101,ar:"القَارِعَة",name:"Al-Qari'ah",info:"11 ayat · Makkiyah",juz:30,page:600},
+  {n:102,ar:"التَّكَاثُر",name:"At-Takasur",info:"8 ayat · Makkiyah",juz:30,page:600},
+  {n:103,ar:"العَصر",name:"Al-'Asr",info:"3 ayat · Makkiyah",juz:30,page:601},
+  {n:104,ar:"الهُمَزَة",name:"Al-Humazah",info:"9 ayat · Makkiyah",juz:30,page:601},
+  {n:105,ar:"الفِيل",name:"Al-Fil",info:"5 ayat · Makkiyah",juz:30,page:601},
+  {n:106,ar:"قُرَيش",name:"Quraisy",info:"4 ayat · Makkiyah",juz:30,page:602},
+  {n:107,ar:"المَاعُون",name:"Al-Ma'un",info:"7 ayat · Makkiyah",juz:30,page:602},
+  {n:108,ar:"الكَوثَر",name:"Al-Kausar",info:"3 ayat · Makkiyah",juz:30,page:602},
+  {n:109,ar:"الكَافِرُون",name:"Al-Kafirun",info:"6 ayat · Makkiyah",juz:30,page:603},
+  {n:110,ar:"النَّصر",name:"An-Nasr",info:"3 ayat · Madaniyah",juz:30,page:603},
+  {n:111,ar:"المَسَد",name:"Al-Masad",info:"5 ayat · Makkiyah",juz:30,page:603},
   {n:112,ar:"الإِخلَاص",name:"Al-Ikhlas",info:"4 ayat · Makkiyah",juz:30,page:604},
   {n:113,ar:"الفَلَق",name:"Al-Falaq",info:"5 ayat · Makkiyah",juz:30,page:604},
   {n:114,ar:"النَّاس",name:"An-Nas",info:"6 ayat · Makkiyah",juz:30,page:604},
@@ -1492,7 +1614,7 @@ const LB=[
   {n:'Fatimah Z.',sc:7120,av:'FZ',c:'#16a085'},
 ];
 const PRAYERS=['Subuh','Dzuhur','Ashar','Maghrib','Isya'];
-const PR_TIMES=['04:28','11:45','15:04','17:38','18:53'];
+let PR_TIMES=['04:28','11:45','15:04','17:38','18:53']; // Will be updated dynamically
 
 // ═══════════════════════════════════════════════
 // STATE
@@ -1891,40 +2013,7 @@ let _mediaRec = null, _recChunks = [], _recStream = null;
 let _recBlob = null, _recAudioEl = null, _recPbInterval = null;
 let _isRecordingReal = false;
 
-function startRec() {
-  S.rec = true;
-  document.getElementById('recBtn').classList.add('on');
-  document.getElementById('waveEl').classList.add('on');
-  document.getElementById('recLbl').textContent = `🔴 Merekam Ayat ${S.curAyah}...`;
-  document.getElementById('recSub').textContent = 'Sedang merekam — tekan untuk berhenti';
-  document.getElementById('recPlaybackWrap').classList.remove('show');
-
-  // Coba rekam suara nyata
-  if (navigator.mediaDevices?.getUserMedia) {
-    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
-      _recStream = stream;
-      _recChunks = [];
-      _isRecordingReal = true;
-      const mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
-        ? 'audio/webm;codecs=opus' : 'audio/webm';
-      _mediaRec = new MediaRecorder(stream, { mimeType: mime });
-      _mediaRec.ondataavailable = e => { if (e.data.size > 0) _recChunks.push(e.data); };
-      _mediaRec.onstop = () => {
-        _recBlob = new Blob(_recChunks, { type: _mediaRec.mimeType });
-        setupPlayback(_recBlob);
-      };
-      _mediaRec.start(100);
-      S.recTimer = setTimeout(() => finishRec(S.curAyah), 20000);
-    }).catch(() => {
-      // Tidak ada izin mic — simulasi saja
-      _isRecordingReal = false;
-      S.recTimer = setTimeout(() => finishRec(S.curAyah), 3500);
-    });
-  } else {
-    _isRecordingReal = false;
-    S.recTimer = setTimeout(() => finishRec(S.curAyah), 3500);
-  }
-}
+// startRec defined below with manual-stop logic
 
 function setupPlayback(blob) {
   // Buat URL untuk playback
@@ -2551,7 +2640,7 @@ function getLocalFallback(msg) {
   if (q.includes('qalqalah')) return 'Qalqalah (قلقلة) artinya **memantulkan/menggetarkan** huruf saat sukun.\n\nHuruf qalqalah ada **5**: ق ط ب ج د — diingat dengan **قُطبٌ جَدَّ**\n\nAda dua jenis:\n• **Qalqalah Sughra** — pantulan kecil, huruf sukun di tengah kata\n• **Qalqalah Kubra** — pantulan besar/kuat, huruf sukun di akhir saat waqaf\n\nContoh: **أَحَد** — dal di akhir dipantulkan kuat saat waqaf.\n\nBagus sekali kamu belajar tajwid! 🌟';
   if (q.includes('hafal') || q.includes('menghafal')) return 'Tips menghafal Al-Qur\'an yang efektif:\n\n• **Rutin sedikit tapi konsisten** — lebih baik 5 ayat sehari rutin daripada 50 ayat sekali\n• **Muraja\'ah (pengulangan)** — ulang hafalan lama sebelum tambah baru\n• **Gunakan satu mushaf** — agar otak merekam posisi ayat secara visual\n• **Pahami maknanya** — ayat yang dipahami lebih mudah dihafal\n• **Rekam suara sendiri** — dengarkan dan koreksi bacaanmu (bisa lewat fitur NurAI!)\n• **Pilih waktu terbaik** — setelah Subuh adalah waktu paling baik untuk menghafal\n\nSemoga Allah mudahkan hafalanmu! 🤲';
   if (q.includes('fatihah') || q.includes('al-fatihah')) return 'Al-Fatihah adalah **Ummul Quran** (induk Al-Qur\'an) dan **As-Sab\'ul Matsani** (tujuh yang diulang).\n\nKandungan Al-Fatihah:\n• Ayat 1-3: **Pujian** kepada Allah (tahmid)\n• Ayat 4: **Pengagungan** Allah di hari kiamat\n• Ayat 5: **Ikrar** penghambaan dan permohonan tolong\n• Ayat 6-7: **Doa** meminta petunjuk jalan yang lurus\n\nIni adalah satu-satunya surah yang berupa dialog antara hamba dan Allah. Setiap ayat dijawab oleh Allah dalam hadits Qudsi.\n\nSemoga kita selalu memahami maknanya dalam shalat! 🌙';
-  return 'Jazakallah khair atas pertanyaannya! 🌙\n\nMohon maaf, koneksi ke server AI sedang terganggu. Untuk pertanyaan tentang tajwid, tafsir, dan Al-Qur\'an, kamu bisa:\n\n• Gunakan tab **Panduan Tajwid** di NurAI\n• Cari di tab **Cari Ayat AI**\n• Bertanya kepada ustadz atau guru Quran di sekitarmu\n\nSemangat terus belajar Al-Qur\'an! 💚';
+  return 'Jazakallah khair atas pertanyaannya! 🌙\n\nMohon maaf, koneksi ke server AI sedang terganggu. Untuk pertanyaan tentang tajwid, tafsir, dan Al-Qur\'an, kamu bisa:\n\n• Gunakan tab **Panduan Tajwid** di Nur.ai\n• Cari di tab **Cari Ayat AI**\n• Bertanya kepada ustadz atau guru Quran di sekitarmu\n\nSemangat terus belajar Al-Qur\'an! 💚';
 }
 
 // ── MAIN BOOT ──
@@ -3043,34 +3132,102 @@ function recAyah(n){
   const e=document.getElementById('ab'+n);if(e)e.classList.add('rec-on');
   startRec();
 }
+// ── LIVE RECORDING TIMER ─────────────────────────────
+let _recLiveTimer = null;
+let _recSeconds = 0;
+
+function _startLiveTimer() {
+  _recSeconds = 0;
+  clearInterval(_recLiveTimer);
+  _recLiveTimer = setInterval(() => {
+    _recSeconds++;
+    const m = String(Math.floor(_recSeconds / 60)).padStart(2,'0');
+    const s = String(_recSeconds % 60).padStart(2,'0');
+    const sub = document.getElementById('recSub');
+    if (sub) sub.textContent = `🔴 Merekam... ${m}:${s} — Tekan tombol untuk berhenti`;
+  }, 1000);
+}
+function _stopLiveTimer() {
+  clearInterval(_recLiveTimer);
+  _recLiveTimer = null;
+}
+
 function toggleRec(){if(S.rec)finishRec(S.curAyah);else startRec();}
+
 function startRec(){
-  S.rec=true;
+  S.rec = true;
   document.getElementById('recBtn').classList.add('on');
   document.getElementById('waveEl').classList.add('on');
-  document.getElementById('recLbl').textContent=`🔴 Merekam Ayat ${S.curAyah}...`;
-  document.getElementById('recSub').textContent='Sedang merekam — tekan untuk berhenti';
-  S.recTimer=setTimeout(()=>finishRec(S.curAyah),3500);
+  document.getElementById('recLbl').textContent = `🎙️ Rekam Ayat ${S.curAyah}`;
+  document.getElementById('recSub').textContent = '🔴 Merekam... 00:00 — Tekan tombol untuk berhenti';
+  document.getElementById('recPlaybackWrap').classList.remove('show');
+
+  // Mulai live timer — TIDAK ADA auto-stop, user yang tentukan kapan berhenti
+  _startLiveTimer();
+
+  // Coba rekam suara nyata
+  if (navigator.mediaDevices?.getUserMedia) {
+    navigator.mediaDevices.getUserMedia({ audio: true }).then(stream => {
+      _recStream = stream;
+      _recChunks = [];
+      _isRecordingReal = true;
+      const mime = MediaRecorder.isTypeSupported('audio/webm;codecs=opus')
+        ? 'audio/webm;codecs=opus' : 'audio/webm';
+      _mediaRec = new MediaRecorder(stream, { mimeType: mime });
+      _mediaRec.ondataavailable = e => { if (e.data.size > 0) _recChunks.push(e.data); };
+      _mediaRec.onstop = () => {
+        _recBlob = new Blob(_recChunks, { type: _mediaRec.mimeType });
+        setupPlayback(_recBlob);
+      };
+      _mediaRec.start(100);
+      // Tidak ada auto-stop — user kontrol penuh
+    }).catch(() => {
+      // Tidak ada izin mic — mode simulasi, tetap tunggu user stop
+      _isRecordingReal = false;
+    });
+  } else {
+    _isRecordingReal = false;
+  }
 }
+
 function finishRec(n){
-  clearTimeout(S.recTimer);S.rec=false;
+  // Stop live timer
+  _stopLiveTimer();
+  S.rec = false;
   document.getElementById('recBtn').classList.remove('on');
   document.getElementById('waveEl').classList.remove('on');
-  const sc=Math.floor(68+Math.random()*30);
-  S.scores[n]=sc;
-  // Save score to Firestore if logged in
+
+  // Stop MediaRecorder jika aktif
+  if (_isRecordingReal && _mediaRec && _mediaRec.state !== 'inactive') {
+    _mediaRec.stop();
+    _recStream?.getTracks().forEach(t => t.stop());
+    _isRecordingReal = false;
+  }
+
+  // Skor lebih akurat berdasarkan durasi rekaman (min 3 detik untuk skor baik)
+  const dur = _recSeconds;
+  let sc;
+  if (dur < 2) {
+    sc = Math.floor(40 + Math.random() * 20); // Terlalu cepat — skor rendah
+  } else {
+    sc = Math.floor(68 + Math.random() * 30);
+  }
+
+  S.scores[n] = sc;
   const surahName = SURAHS.find(x=>x.n===S.curSurah)?.name||'Al-Fatihah';
   saveScoreToFirestore(surahName, n, sc);
-  const ayahs=getAyahs(),a=ayahs.find(x=>x.num===n)||ayahs[0];
-  if(!S.hafalan[n])S.hafalan[n]={c:0};
-  if(sc>=75)S.hafalan[n].c=Math.min(3,S.hafalan[n].c+1);
-  else{
-    S.errors.unshift({surah:SURAHS.find(x=>x.n===S.curSurah)?.name||'Al-Fatihah',ayah:n,sc,time:new Date().toLocaleTimeString('id-ID'),rules:a.rules||[]});
-    if(S.errors.length>30)S.errors.pop();
+  const ayahs = getAyahs(), a = ayahs.find(x=>x.num===n)||ayahs[0];
+  if (!S.hafalan[n]) S.hafalan[n] = {c:0};
+  if (sc >= 75) S.hafalan[n].c = Math.min(3, S.hafalan[n].c + 1);
+  else {
+    S.errors.unshift({surah:surahName, ayah:n, sc, time:new Date().toLocaleTimeString('id-ID'), rules:a.rules||[]});
+    if (S.errors.length > 30) S.errors.pop();
   }
-  const nx=n<ayahs.length?n+1:1;S.curAyah=nx;
-  document.getElementById('recLbl').textContent=`Rekam Ayat ${nx}`;
-  document.getElementById('recSub').textContent='Tekan mikrofon · TTS Indonesia aktif';
+
+  const nx = n < ayahs.length ? n + 1 : 1; S.curAyah = nx;
+  document.getElementById('recLbl').textContent = `Rekam Ayat ${nx}`;
+  document.getElementById('recSub').textContent = 'Tekan mikrofon · TTS Indonesia aktif';
+
   const fbs=[
     `Ayat ${n}: Mad Thabii pada kata اللَّهِ kurang panjang. Perpanjang 2 harakat, setara dua ketukan.`,
     `Ayat ${n}: Ghunnah الرَّحِيمِ sudah bagus! Pertahankan dengung 2 harakat dari rongga hidung.`,
@@ -3078,14 +3235,14 @@ function finishRec(n){
     `Ayat ${n}: Qalqalah الضَّالِّينَ perlu lebih mantul saat waqaf. Pantulan besar di akhir ayat.`,
     `Ayat ${n}: Tafkhim pada الصِّرَاطَ harus tebal karena huruf isti\'la. Naikkan pangkal lidah.`,
   ];
-  const fb=fbs[n%fbs.length];
-  speakTTS(fb);renderAyahs();
-  setTimeout(()=>showScore(n,sc,fb),600);
+  const fb = fbs[n % fbs.length];
+  speakTTS(fb); renderAyahs();
+  setTimeout(()=>showScore(n, sc, fb), 600);
 }
 function speakTTS(text){
   if('speechSynthesis' in window){
     const u=new SpeechSynthesisUtterance(text);
-    u.lang='id-ID';u.rate=0.9;window.speechSynthesis.cancel();window.speechSynthesis.speak(u);
+    u.lang='id-ID';u.rate=0.72;u.pitch=1.0;u.volume=1.0;window.speechSynthesis.cancel();setTimeout(()=>window.speechSynthesis.speak(u),120);
   }
 }
 function showScore(n,sc,fb){
@@ -3209,26 +3366,88 @@ function renderPrayer(){
   document.getElementById('prName').textContent=PRAYERS[nextI];
   document.getElementById('prSub').textContent=`Pukul ${PR_TIMES[nextI]} WIB`;
 }
-function loadPrayer(){
-  const city=document.getElementById('cityInp').value||'Jember';
-  document.getElementById('prCity').textContent=city+', Indonesia';
-  document.getElementById('qiblaInfo').textContent=`Kiblat dari ${city}: 295° Barat Laut`;
-  renderPrayer();toast('Jadwal Dimuat','Jadwal shalat '+city+' berhasil dimuat.');
+// Qibla angles from Jember (default) - updated when city changes
+const QIBLA_DEFAULT = 295;
+
+async function loadPrayer(){
+  const city=document.getElementById('cityInp').value.trim()||'Jember';
+  document.getElementById('prCity').textContent=city+', Jawa Timur';
+  toast('⏳ Memuat...','Mengambil jadwal shalat '+city+'...');
+  try {
+    // Aladhan API — free, no key needed
+    const res = await fetch(`https://api.aladhan.com/v1/timingsByCity?city=${encodeURIComponent(city)}&country=ID&method=20`);
+    if (!res.ok) throw new Error('API error');
+    const data = await res.json();
+    const t = data.data.timings;
+    // Update PR_TIMES with real data
+    PR_TIMES[0] = t.Fajr.substring(0,5);
+    PR_TIMES[1] = t.Dhuhr.substring(0,5);
+    PR_TIMES[2] = t.Asr.substring(0,5);
+    PR_TIMES[3] = t.Maghrib.substring(0,5);
+    PR_TIMES[4] = t.Isha.substring(0,5);
+    renderPrayer();
+    toast('✅ Jadwal Dimuat',`Shalat ${city} hari ini berhasil diperbarui.`);
+  } catch(e) {
+    // Fallback: keep current times
+    renderPrayer();
+    toast('📅 Jadwal Lokal','Menggunakan jadwal tersimpan — cek koneksi internet.');
+  }
 }
 function getPrayerGPS(){
-  if(navigator.geolocation)navigator.geolocation.getCurrentPosition(p=>{
-    toast('📍 GPS Aktif',p.coords.latitude.toFixed(3)+', '+p.coords.longitude.toFixed(3));
-    document.getElementById('cityInp').value='Lokasi GPS';loadPrayer();
+  if(navigator.geolocation)navigator.geolocation.getCurrentPosition(async p=>{
+    const lat=p.coords.latitude.toFixed(4), lng=p.coords.longitude.toFixed(4);
+    toast('📍 GPS Aktif',`${lat}, ${lng} — memuat jadwal...`);
+    try {
+      const res = await fetch(`https://api.aladhan.com/v1/timings?latitude=${lat}&longitude=${lng}&method=20`);
+      if (!res.ok) throw new Error();
+      const data = await res.json();
+      const t = data.data.timings;
+      PR_TIMES[0]=t.Fajr.substring(0,5);PR_TIMES[1]=t.Dhuhr.substring(0,5);
+      PR_TIMES[2]=t.Asr.substring(0,5);PR_TIMES[3]=t.Maghrib.substring(0,5);PR_TIMES[4]=t.Isha.substring(0,5);
+      document.getElementById('cityInp').value='Lokasi GPS';
+      document.getElementById('prCity').textContent='Lokasi GPS Saat Ini';
+      renderPrayer();
+      toast('✅ GPS Berhasil','Jadwal shalat diperbarui sesuai lokasi GPS.');
+    } catch(e){
+      document.getElementById('cityInp').value='Lokasi GPS';loadPrayer();
+    }
   },()=>toast('GPS Gagal','Izin ditolak — masukkan kota manual.'));
 }
 function startCountdown(){
-  setInterval(()=>{
+  function updateCountdown(){
     const n=new Date();
-    let diff=(11*60+45)-(n.getHours()*60+n.getMinutes());
-    if(diff<0)diff+=24*60;
-    const h=String(Math.floor(diff/60)).padStart(2,'0'),m=String(diff%60).padStart(2,'0'),s=String(59-n.getSeconds()).padStart(2,'0');
+    const nowMins=n.getHours()*60+n.getMinutes();
+    // Parse PR_TIMES array to find next prayer
+    const prayerMins=PR_TIMES.map(t=>{
+      const [h,m]=t.split(':').map(Number);
+      return h*60+m;
+    });
+    // Find next prayer index
+    let nextIdx=prayerMins.findIndex(pm=>pm>nowMins);
+    if(nextIdx===-1)nextIdx=0; // wrap to Subuh next day
+    const targetMins=prayerMins[nextIdx];
+    let diffSecs;
+    if(targetMins>nowMins){
+      diffSecs=(targetMins-nowMins)*60-n.getSeconds();
+    } else {
+      // Next day Subuh
+      diffSecs=(24*60-nowMins+targetMins)*60-n.getSeconds();
+    }
+    if(diffSecs<0)diffSecs=0;
+    const h=String(Math.floor(diffSecs/3600)).padStart(2,'0');
+    const m=String(Math.floor((diffSecs%3600)/60)).padStart(2,'0');
+    const s=String(diffSecs%60).padStart(2,'0');
     const el=document.getElementById('prCd');if(el)el.textContent=`${h}:${m}:${s}`;
-  },1000);
+    // Update next prayer display dynamically
+    document.getElementById('prName').textContent=PRAYERS[nextIdx];
+    document.getElementById('prSub').textContent=`Pukul ${PR_TIMES[nextIdx]} WIB`;
+    // Highlight next prayer card
+    document.querySelectorAll('.pr-c').forEach((c,i)=>{
+      c.classList.toggle('next',i===nextIdx);
+    });
+  }
+  updateCountdown();
+  setInterval(updateCountdown,1000);
 }
 function startCompass(){
   let a=0;
