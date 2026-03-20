@@ -663,101 +663,113 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 
 /* ══ RESPONSIVE ══════════════════════════════════════ */
 @media(max-width:680px){
-  /* ── SIDEBAR: overlay drawer di mobile ── */
-  .sidebar{
-    position:fixed;left:0;top:0;bottom:0;z-index:300;
-    transform:translateX(-100%);transition:transform .25s ease;
-    width:80vw;max-width:280px;box-shadow:4px 0 20px rgba(0,0,0,.15);
-  }
+  /* ── SIDEBAR ── */
+  .sidebar{position:fixed;left:0;top:0;bottom:0;z-index:300;transform:translateX(-100%);transition:transform .25s ease;width:82vw;max-width:300px;box-shadow:4px 0 24px rgba(0,0,0,.2)}
   .sidebar.open{transform:translateX(0)}
   .sb-overlay{display:block}
 
-  /* ── TOPBAR: tampilkan hamburger ── */
+  /* ── TOPBAR ── */
   .hamburger{display:flex}
-  .topbar{padding:8px 10px;gap:6px;flex-wrap:nowrap}
+  .topbar{padding:8px 12px;gap:8px;flex-wrap:nowrap;min-height:52px}
   .t-l{min-width:0;flex:1;overflow:hidden}
-  .t-nm{font-size:12px;max-width:90px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-  .t-ar{font-size:15px}
-  .hBadge,.pill{display:none}
-  .mode-row{margin-top:2px;gap:4px}
-  .m-btn{padding:2px 7px;font-size:9px}
-  .t-r .ib{width:26px;height:26px}
-  .t-r .ib svg{width:11px;height:11px}
-  .av{width:24px;height:24px;font-size:9px}
-  .t-r{gap:3px}
+  .t-nm{font-size:13px;font-weight:700;max-width:120px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .t-ar{font-size:16px}
+  .pill.p-g{display:none}
+  .mode-row{margin-top:3px;gap:5px}
+  .m-btn{padding:3px 9px;font-size:10px;font-weight:600}
+  /* Sembunyikan ikon jarang di mobile, tampilkan hanya yg penting */
+  .t-r{gap:4px}
+  .t-r .ib{width:30px;height:30px}
+  .t-r .ib svg{width:14px;height:14px}
+  /* Sembunyikan riwayat & install di mobile */
+  .t-r .ib:nth-child(1){display:none}
+  .t-r .ib:nth-child(3){display:none}
+  /* Shazam tetap tampil + lebih besar */
+  .t-r .ib:nth-child(2){width:34px;height:34px;background:var(--jade4);border-color:var(--jade5)}
+  .t-r .ib:nth-child(2) svg{width:16px;height:16px;stroke:var(--jade2)}
+  .av{width:28px;height:28px;font-size:10px}
 
-  /* ── TAB BAR: lebih kecil, scroll horizontal ── */
+  /* ── TAB BAR — lebih tinggi, teks jelas ── */
   .tab-bar{
-    padding:0 4px;gap:0;
+    padding:0 6px;gap:2px;
     overflow-x:auto;overflow-y:hidden;
     -webkit-overflow-scrolling:touch;
-    scroll-snap-type:x mandatory;
     display:flex!important;flex-wrap:nowrap;
     position:relative;z-index:10;
-    min-height:40px;
+    min-height:48px;border-bottom:1px solid var(--paper3);
   }
   .tab-bar::-webkit-scrollbar{display:none}
   .tb{
-    padding:6px 8px;font-size:9px;gap:2px;
-    white-space:nowrap;flex-shrink:0;
-    scroll-snap-align:start;
-    min-width:fit-content;
+    padding:8px 10px;font-size:10px;font-weight:500;gap:4px;
+    white-space:nowrap;flex-shrink:0;min-width:fit-content;
+    border-bottom:2px solid transparent;margin-bottom:-1px;
   }
-  .tb svg{width:10px;height:10px}
+  .tb.on{font-weight:700}
+  .tb svg{width:13px;height:13px}
 
-  /* ── AYAH TEXT: ukuran lebih kecil di HP ── */
-  .a-text{font-size:22px;line-height:2.4;padding:10px 12px 6px}
-  .bism-ar{font-size:20px}
+  /* ── AYAH TEXT ── */
+  .a-text{font-size:24px;line-height:2.5;padding:12px 14px 8px}
+  .bism-ar{font-size:22px}
+  .bism{padding:18px 14px 10px}
 
-  /* ── REC BAR: susun vertikal ── */
-  .rec-bar{padding:8px 12px;gap:8px;flex-wrap:wrap}
+  /* ── REC BAR — lebih besar & jelas ── */
+  .rec-bar{
+    padding:12px 14px;gap:12px;
+    border-top:2px solid var(--jade5);
+    background:var(--jade4);
+  }
+  .rec-big{width:52px;height:52px}
+  .rec-big svg{width:22px;height:22px}
+  .rec-lbl{font-size:14px;font-weight:700}
+  .rec-sub{font-size:11px}
   .rec-info{flex:1;min-width:0}
   .rec-playback-wrap{width:100%;order:3}
 
-  /* ── GUIDE TAJWID: sembunyikan sidebar panduan ── */
+  /* ── PRAYER MINI WIDGET ── */
+  .prayer-mini{display:flex!important}
+
+  /* ── TAJWID GUIDE ── */
   .guide-wrap{flex-direction:column}
-  .guide-nav{width:100%;border-right:none;border-bottom:1px solid var(--paper3);max-height:140px;overflow-x:auto;overflow-y:hidden;display:flex;flex-direction:row;flex-wrap:wrap;padding:6px;gap:4px}
+  .guide-nav{width:100%;border-right:none;border-bottom:1px solid var(--paper3);max-height:130px;overflow-x:auto;overflow-y:hidden;display:flex;flex-direction:row;flex-wrap:wrap;padding:6px;gap:4px}
   .guide-nav .s-hd{display:none}
   .guide-nav .s-item{padding:5px 10px;font-size:10px;flex-shrink:0;border-left:none;border-bottom:2px solid transparent}
   .guide-nav .s-item.on{border-bottom-color:var(--jade2);border-left:none}
   .guide-body{padding:12px 14px 40px}
 
-  /* ── HIJAIYAH: grid lebih kecil ── */
-  .hj-grid{grid-template-columns:repeat(auto-fill,minmax(68px,1fr));gap:6px}
-  .hj-ar{font-size:26px}
+  /* ── HIJAIYAH ── */
+  .hj-grid{grid-template-columns:repeat(auto-fill,minmax(72px,1fr));gap:7px}
+  .hj-ar{font-size:28px}
 
-  /* ── QORI: scroll horizontal ── */
+  /* ── QORI ── */
   .qori-row{gap:8px}
   .qori-card{min-width:100px;padding:8px}
 
-  /* ── CHAT USTADZ: full height ── */
+  /* ── CHAT ── */
   .chat-msgs{padding:10px}
   .chat-input-area{padding:8px 10px}
 
-  /* ── PROGRESS: 2 kolom ── */
+  /* ── PROGRESS ── */
   .stats-g{grid-template-columns:repeat(2,1fr)}
   .badge-g{grid-template-columns:repeat(4,1fr)}
   .pr-cards{grid-template-columns:repeat(2,1fr)}
 
-  /* ── WBW: kata lebih kecil ── */
-  .wbw-word{min-width:50px;padding:6px 7px}
-  .wbw-word-ar{font-size:16px}
+  /* ── WBW ── */
+  .wbw-word{min-width:52px;padding:6px 7px}
+  .wbw-word-ar{font-size:17px}
   .wbw-det-row{grid-template-columns:1fr 1fr}
 
-  /* ── SEARCH: chips lebih kecil ── */
-  .srch-chip{font-size:9px;padding:3px 8px}
+  /* ── SEARCH ── */
+  .srch-chip{font-size:10px;padding:4px 10px}
 
-  /* ── LEGEND BAR: font lebih kecil ── */
+  /* ── LEGEND BAR ── */
   .leg-item{font-size:9px}
+  .leg{padding:2px 6px}
 
-  /* ── TOAST: full width bawah ── */
-  .toast{top:auto;bottom:70px;right:8px;left:8px;max-width:none}
+  /* ── TOAST ── */
+  .toast{top:auto;bottom:80px;right:8px;left:8px;max-width:none}
 
-  /* ── TAJWID POPUP: lebih rendah ── */
-  .tj-popup{bottom:70px;width:min(98vw,440px)}
-
-  /* ── IBADAH: 2 kolom prayer ── */
-  .pr-cards{grid-template-columns:repeat(2,1fr)}
+  /* ── TAJWID POPUP ── */
+  .tj-popup{bottom:76px;width:min(98vw,440px)}
 
   /* ── LEADERBOARD ── */
   .lb-item{padding:8px 10px;font-size:11px}
@@ -767,6 +779,25 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
 .sb-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:299;backdrop-filter:blur(2px)}
 .hamburger{display:none;width:34px;height:34px;border-radius:8px;border:1px solid var(--paper3);background:var(--paper2);cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:4px;flex-shrink:0}
 .hamburger span{width:16px;height:1.5px;background:var(--ink);border-radius:1px;transition:.2s}
+
+/* ══ PRAYER MINI WIDGET (mobile sticky) ══════════════ */
+.prayer-mini{
+  display:none; /* shown via mobile media query */
+  position:sticky;top:0;z-index:15;
+  background:linear-gradient(135deg,var(--jade) 0%,var(--jade2) 100%);
+  padding:7px 14px;
+  align-items:center;justify-content:space-between;
+  gap:8px;flex-shrink:0;
+  border-bottom:1px solid var(--jade2);
+}
+.pm-left{display:flex;flex-direction:column}
+.pm-name{font-size:11px;font-weight:700;color:#fff;opacity:.85;letter-spacing:.3px;text-transform:uppercase}
+.pm-cd{font-size:20px;font-weight:700;color:#fff;letter-spacing:1px;line-height:1;font-variant-numeric:tabular-nums}
+.pm-sub{font-size:10px;color:rgba(255,255,255,.7);margin-top:1px}
+.pm-right{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.pm-city{font-size:10px;color:rgba(255,255,255,.7)}
+.pm-shazam{display:flex;align-items:center;gap:5px;padding:5px 10px;background:rgba(255,255,255,.18);border-radius:20px;border:1px solid rgba(255,255,255,.25);cursor:pointer;font-size:10px;font-weight:600;color:#fff}
+.pm-shazam svg{width:12px;height:12px;stroke:#fff;fill:none;stroke-width:2;stroke-linecap:round}
 </style>
 </head>
 <body>
@@ -970,15 +1001,31 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
       </div>
     </div>
 
+    <!-- PRAYER MINI WIDGET — visible on mobile only -->
+    <div class="prayer-mini" id="prayerMini">
+      <div class="pm-left">
+        <div class="pm-name" id="pmName">Subuh</div>
+        <div class="pm-cd" id="pmCd">00:00:00</div>
+        <div class="pm-sub" id="pmSub">Pukul 04:28 WIB</div>
+      </div>
+      <div class="pm-right">
+        <div class="pm-city" id="pmCity">Jember</div>
+        <div class="pm-shazam" onclick="openShazam()">
+          <svg viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+          Shazam Ayat
+        </div>
+      </div>
+    </div>
+
     <div class="tab-bar">
-      <button class="tb on" onclick="setTab(this,'baca')"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Baca & Latihan</button>
+      <button class="tb on" onclick="setTab(this,'baca')"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>Baca</button>
       <button class="tb" onclick="setTab(this,'terjemah')"><svg viewBox="0 0 24 24"><path d="m5 8 6 6m-7 0 6-6 2-3M2 5h12M7 2h1m15 20-5-10-5 10M14 18h6"/></svg>Terjemah</button>
       <button class="tb" onclick="setTab(this,'wbw')"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h8M4 18h4"/></svg>Per Kata</button>
       <button class="tb" onclick="setTab(this,'qori')"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>Qori 15+</button>
-      <button class="tb" onclick="setTab(this,'tajwid')"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Panduan Tajwid</button>
-      <button class="tb" onclick="setTab(this,'hijaiyah')"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Huruf Hijaiyah</button>
-      <button class="tb" onclick="setTab(this,'search')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Cari Ayat AI</button>
-      <button class="tb" onclick="setTab(this,'ustadz')"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Tanya Ustadz AI</button>
+      <button class="tb" onclick="setTab(this,'tajwid')"><svg viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Tajwid</button>
+      <button class="tb" onclick="setTab(this,'hijaiyah')"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg>Hijaiyah</button>
+      <button class="tb" onclick="setTab(this,'search')"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>Cari AI</button>
+      <button class="tb" onclick="setTab(this,'ustadz')"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Ustadz AI</button>
       <button class="tb" onclick="setTab(this,'ibadah')"><svg viewBox="0 0 24 24"><path d="M12 2l2 7h7l-5.5 4 2 7L12 16l-5.5 4 2-7L3 9h7z"/></svg>Ibadah</button>
       <button class="tb" onclick="setTab(this,'progress')"><svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>Progress</button>
     </div>
@@ -1248,7 +1295,7 @@ html,body{height:100%;overflow:hidden;font-family:var(--ff);font-size:14px;line-
       <div style="display:flex;gap:6px">
         <input id="shzApiUrl" type="text" placeholder="https://USER-nurai-whisper-api.hf.space"
           style="flex:1;padding:6px 9px;background:var(--paper2);border:1px solid var(--paper3);border-radius:var(--r);font-size:10px;font-family:var(--ff);color:var(--ink);outline:none"
-          oninput="localStorage.setItem('nurai_whisper_url', this.value.trim())">
+          oninput="onWhisperUrlChange(this.value.trim())">
         <button onclick="testWhisperApi()" style="padding:6px 10px;background:var(--jade4);border:1px solid var(--jade5);border-radius:var(--r);font-size:10px;font-family:var(--ff);color:var(--jade2);cursor:pointer;white-space:nowrap">Test</button>
       </div>
       <div id="shzApiStatus" style="font-size:9px;margin-top:4px;color:var(--ink4)"></div>
@@ -3035,8 +3082,96 @@ function boot(){
   renderGuide();renderProgress();renderPrayer();
   renderHijaiyah();renderWBW();
   startCountdown();startCompass();
+  // Sync prayer mini city
+  const pmCity=document.getElementById('pmCity');
+  if(pmCity){const city=document.getElementById('cityInp').value||'Jember';pmCity.textContent=city;}
   // Pre-fetch surah populer di background setelah 3 detik
   setTimeout(prefetchPopularSurahs, 3000);
+  // Keep HF Space awake — ping setiap 25 menit
+  setTimeout(startHFKeepAlive, 5000);
+}
+
+// ═══════════════════════════════════════════════
+// HF SPACE KEEP-ALIVE
+// Ping /health setiap 25 menit agar Space tidak tidur.
+// HF free tier sleep setelah 48 jam idle — ping rutin mencegah ini.
+// ═══════════════════════════════════════════════
+let _hfPingInterval = null;
+let _hfLastPing = null;
+let _hfStatus = 'unknown'; // 'ok' | 'sleeping' | 'error' | 'unknown'
+
+const HF_PING_INTERVAL = 25 * 60 * 1000; // 25 menit
+const HF_PING_TIMEOUT  = 12 * 1000;       // 12 detik timeout per ping
+
+async function pingHFSpace() {
+  const url = (localStorage.getItem('nurai_whisper_url') || '').trim();
+  if (!url) return; // belum dikonfigurasi
+
+  try {
+    const res = await fetch(`${url}/health`, {
+      signal: AbortSignal.timeout(HF_PING_TIMEOUT),
+      cache: 'no-store'
+    });
+    const data = await res.json();
+    _hfLastPing = new Date();
+    _hfStatus = (data.status === 'ok') ? 'ok' : 'error';
+    updateHFStatusUI('ok', data.openai_connected);
+    console.log('[NurAI] HF ping ✓', new Date().toLocaleTimeString('id-ID'));
+  } catch(e) {
+    _hfStatus = 'sleeping';
+    _hfLastPing = new Date();
+    updateHFStatusUI('sleeping');
+    console.warn('[NurAI] HF ping gagal (mungkin sleeping):', e.message);
+    // Jika sleeping, coba wake-up dengan fetch tanpa timeout
+    // HF akan mulai boot — ping lagi 60 detik kemudian
+    setTimeout(pingHFSpace, 60 * 1000);
+  }
+}
+
+function updateHFStatusUI(status, openaiConnected) {
+  // Update indikator di Shazam overlay jika sedang terbuka
+  const st = document.getElementById('shzApiStatus');
+  if (!st) return;
+  if (status === 'ok') {
+    if (openaiConnected === false) {
+      st.innerHTML = '⚠ Space aktif — OpenAI key belum diset di HF Settings';
+      st.style.color = 'var(--gold)';
+    } else {
+      st.innerHTML = '✓ Whisper siap — Space aktif';
+      st.style.color = 'var(--jade2)';
+    }
+  } else {
+    st.innerHTML = '😴 Space sleeping — sedang membangunkan...';
+    st.style.color = 'var(--gold)';
+  }
+}
+
+function startHFKeepAlive() {
+  // Ping pertama kali saat app buka
+  pingHFSpace();
+  // Lalu setiap 25 menit selama app terbuka
+  if (_hfPingInterval) clearInterval(_hfPingInterval);
+  _hfPingInterval = setInterval(pingHFSpace, HF_PING_INTERVAL);
+  // Juga ping saat user kembali ke tab (setelah mungkin lama tidak aktif)
+  document.addEventListener('visibilitychange', () => {
+    if (document.visibilityState === 'visible') {
+      const sinceLastPing = _hfLastPing ? (Date.now() - _hfLastPing) : Infinity;
+      // Ping ulang kalau sudah lebih dari 20 menit sejak ping terakhir
+      if (sinceLastPing > 20 * 60 * 1000) {
+        pingHFSpace();
+      }
+    }
+  });
+}
+
+// Ekspor untuk dipakai di Shazam overlay — saat user isi URL baru
+function onWhisperUrlChange(url) {
+  if (!url) return;
+  localStorage.setItem('nurai_whisper_url', url.trim());
+  // Restart keep-alive dengan URL baru
+  if (_hfPingInterval) clearInterval(_hfPingInterval);
+  pingHFSpace();
+  _hfPingInterval = setInterval(pingHFSpace, HF_PING_INTERVAL);
 }
 
 // ═══════════════════════════════════════════════
@@ -3854,6 +3989,13 @@ function startCountdown(){
     // Update next prayer display dynamically
     document.getElementById('prName').textContent=PRAYERS[nextIdx];
     document.getElementById('prSub').textContent=`Pukul ${PR_TIMES[nextIdx]} WIB`;
+    // Sync mobile mini widget
+    const pmCd=document.getElementById('pmCd');
+    const pmName=document.getElementById('pmName');
+    const pmSub=document.getElementById('pmSub');
+    if(pmCd)pmCd.textContent=`${h}:${m}:${s}`;
+    if(pmName)pmName.textContent=PRAYERS[nextIdx];
+    if(pmSub)pmSub.textContent=`Pukul ${PR_TIMES[nextIdx]} WIB`;
     // Highlight next prayer card
     document.querySelectorAll('.pr-c').forEach((c,i)=>{
       c.classList.toggle('next',i===nextIdx);
@@ -4013,86 +4155,179 @@ function stopShazamRec(analyze){
 
 async function analyzeShazam(blob){
   const apiUrl = (localStorage.getItem('nurai_whisper_url') || '').trim();
-  setShzStatus('Menganalisis dengan Whisper AI...', 'var(--jade2)');
 
+  // Jika tidak ada API URL → langsung tunjukkan petunjuk
+  if (!apiUrl) {
+    document.getElementById('shzErr').innerHTML =
+      '⚠️ URL Whisper API belum diisi.<br>Isi kolom URL di atas dengan:<br>' +
+      '<code style="font-size:10px;background:var(--paper2);padding:2px 6px;border-radius:4px">' +
+      'https://fastnetkesilir-nurai-whisper.hf.space</code>' +
+      '<br><br>Lalu tap <strong>Test</strong> untuk verifikasi.';
+    document.getElementById('shzErr').style.display = 'block';
+    setShzStatus('URL API belum diisi');
+    return;
+  }
+
+  setShzStatus('Mengirim audio ke Whisper AI...', 'var(--jade2)');
+
+  // Coba wake HF Space dulu jika sleeping
   try {
+    const health = await fetch(`${apiUrl}/health`, {
+      signal: AbortSignal.timeout(12000)
+    });
+    if (!health.ok) throw new Error('Space tidak merespons');
+    const hdata = await health.json();
+    if (!hdata.openai_connected) {
+      showShzError('Whisper API aktif tapi OpenAI key belum dikonfigurasi di HF Space Settings.');
+      return;
+    }
+  } catch(e) {
+    // Jika sleeping, HF butuh ~30 detik untuk wake up
+    if (e.name === 'TimeoutError' || e.message.includes('fetch')) {
+      showShzError(
+        '⏳ HF Space sedang tidur (Sleeping).<br>' +
+        'Buka halaman ini dulu untuk membangunkannya:<br>' +
+        `<a href="${apiUrl}" target="_blank" style="color:var(--jade2);font-size:10px">${apiUrl}</a><br><br>` +
+        'Tunggu ~30 detik sampai status berubah dari <em>Sleeping</em> → <em>Running</em>, lalu coba lagi.'
+      );
+      return;
+    }
+  }
+
+  // Kirim audio
+  try {
+    setShzStatus('Menganalisis bacaan...', 'var(--jade2)');
     const fd = new FormData();
     fd.append('audio', blob, 'shazam.webm');
-    // Kirim tanpa surah/ayah tertentu — backend akan cari kecocokan terbaik
-    fd.append('surah', '0');
+    fd.append('surah', '0'); // 0 = cari di semua surah
     fd.append('ayah', '0');
 
-    const res = await fetch(`${apiUrl}/analyze`, { method: 'POST', body: fd });
-    if (!res.ok) throw new Error(`Server error ${res.status}`);
+    const res = await fetch(`${apiUrl}/analyze`, {
+      method: 'POST',
+      body: fd,
+      signal: AbortSignal.timeout(30000)
+    });
+
+    if (!res.ok) {
+      const errText = await res.text().catch(()=>'');
+      throw new Error(`Server ${res.status}: ${errText.slice(0,100)}`);
+    }
+
     const data = await res.json();
 
     if (data.success && data.transcription?.detected) {
-      showShazamResult(data);
+      // API sukses — tapi kita tetap verifikasi hasilnya masuk akal
+      const detectedSurah = data.surah;
+      const detectedAyah  = data.ayah;
+      if (detectedSurah && detectedSurah > 0 && detectedSurah <= 114) {
+        showShazamResult(data);
+      } else {
+        // Backend tidak return surah/ayah — cari lokal dari teks
+        localShazamSearch(data.transcription.detected);
+      }
     } else {
-      // Fallback: search locally using the transcription text
-      const text = data.transcription?.detected || '';
-      if (text) localShazamSearch(text);
-      else throw new Error('Tidak ada teks yang terdeteksi');
+      showShzError('Tidak ada teks Arab yang terdeteksi. Coba baca lebih keras dan jelas.');
     }
+
   } catch(e) {
-    // Full fallback: search dari teks yang direkam secara lokal
-    setShzStatus('Whisper tidak tersedia — mencari lokal...', 'var(--gold)');
-    setTimeout(() => {
-      document.getElementById('shzErr').textContent =
-        `Gagal hubungi Whisper API: ${e.message}. Pastikan HF Space aktif dan URL benar.`;
-      document.getElementById('shzErr').style.display = 'block';
-      setShzStatus('Tap tombol lalu baca ayat');
-    }, 1200);
+    showShzError(`Gagal analisis: ${e.message.slice(0,120)}`);
   }
 }
 
+function showShzError(html) {
+  document.getElementById('shzErr').innerHTML = html;
+  document.getElementById('shzErr').style.display = 'block';
+  document.getElementById('shzRes').style.display = 'none';
+  setShzStatus('Gagal — lihat keterangan di bawah');
+}
+
 function showShazamResult(data){
-  const pct = data.transcription?.similarity_pct || 0;
-  const heard = data.transcription?.detected || '';
-  const surah = data.surah || S.curSurah;
-  const ayah  = data.ayah  || 1;
+  const pct    = data.transcription?.similarity_pct || 0;
+  const heard  = data.transcription?.detected || '';
+  const surah  = data.surah;   // WAJIB ada — tidak boleh fallback ke S.curSurah
+  const ayah   = data.ayah;
+
+  // Validasi — jangan tampilkan hasil yang salah
+  if (!surah || surah < 1 || surah > 114 || !ayah) {
+    showShzError('Hasil tidak valid dari API. Coba rekam ulang dengan bacaan yang lebih jelas.');
+    return;
+  }
+
   _shzFoundSurah = surah;
   _shzFoundAyah  = ayah;
 
-  // Get Arabic text from local SURAH_DATA or API result
-  const ayahData = SURAH_DATA[surah]?.find(a => a.num === ayah);
-  const arText = ayahData?.ar || data.tajwid?.tts_text || heard;
   const surahName = SURAHS.find(s => s.n === surah)?.name || `Surah ${surah}`;
+  const ayahData  = SURAH_DATA[surah]?.find(a => a.num === ayah);
+  const arText    = ayahData?.ar || heard || '';
 
-  document.getElementById('shzConfBar').style.width = pct + '%';
-  document.getElementById('shzConfPct').textContent = pct + '%';
-  document.getElementById('shzAr').innerHTML = arText;
-  document.getElementById('shzHeard').textContent = heard ? `"${heard}"` : '';
-  document.getElementById('shzInfo').textContent = `${surahName} — Ayat ${ayah}`;
-  document.getElementById('shzRes').style.display = 'block';
-  setShzStatus(`Ditemukan! ${surahName} ${ayah}`, 'var(--jade2)');
+  document.getElementById('shzConfBar').style.width  = pct + '%';
+  document.getElementById('shzConfPct').textContent  = pct + '%';
+  document.getElementById('shzAr').innerHTML         = arText;
+  document.getElementById('shzHeard').textContent    = heard ? `"${heard}"` : '';
+  document.getElementById('shzInfo').textContent     = `${surahName} — Ayat ${ayah}`;
+  document.getElementById('shzErr').style.display    = 'none';
+  document.getElementById('shzRes').style.display    = 'block';
+  setShzStatus(`✓ Ditemukan: ${surahName} Ayat ${ayah}`, 'var(--jade2)');
 }
 
 function localShazamSearch(arabicText){
-  // Search from loaded SURAH_DATA
+  if (!arabicText || arabicText.length < 4) {
+    showShzError('Teks yang terdengar terlalu pendek. Baca minimal 3-4 kata dengan jelas.');
+    return;
+  }
+
+  setShzStatus('Mencari di database lokal...', 'var(--gold)');
+
+  // Strip harakat untuk perbandingan
+  const strip = t => t.replace(/[ً-ٰٟ]/g,'').replace(/<[^>]*>/g,'').trim();
+  const q = strip(arabicText);
+
   let best = null, bestScore = 0;
-  const q = arabicText.replace(/[ً-ٟ]/g,'').trim(); // strip harakat
+
+  // Cari di semua SURAH_DATA yang sudah ter-load
   Object.entries(SURAH_DATA).forEach(([sNum, ayahs]) => {
     ayahs.forEach(a => {
-      const clean = (a.ar || '').replace(/<[^>]*>/g,'').replace(/[ً-ٟ]/g,'');
+      const clean = strip(a.ar || '');
+      if (!clean) return;
+
       let score = 0;
-      // sliding substring match
-      for (let len = 4; len <= q.length; len++) {
-        const sub = q.slice(0, len);
-        if (clean.includes(sub)) score = len;
+      // Hitung berapa karakter berturut dari query ada di ayat
+      for (let len = 6; len <= q.length; len++) {
+        if (clean.includes(q.slice(0, len))) score = len;
+        else break;
       }
-      if (score > bestScore) { bestScore = score; best = { surah: parseInt(sNum), ayah: a.num, ar: a.ar }; }
+      // Juga cari substring di mana saja (bukan hanya dari awal)
+      const minLen = Math.min(8, q.length);
+      if (score === 0 && q.length >= minLen) {
+        for (let i = 0; i <= q.length - minLen; i++) {
+          if (clean.includes(q.slice(i, i + minLen))) { score = minLen; break; }
+        }
+      }
+
+      if (score > bestScore) {
+        bestScore = score;
+        best = { surah: parseInt(sNum), ayah: a.num, ar: a.ar };
+      }
     });
   });
-  if (best && bestScore >= 4) {
-    const pct = Math.min(99, Math.round(bestScore / Math.max(q.length, 1) * 100));
-    showShazamResult({ success:true, surah:best.surah, ayah:best.ayah,
-      transcription:{ detected:arabicText, similarity_pct:pct } });
+
+  if (best && bestScore >= 6) {
+    const pct = Math.min(85, Math.round(bestScore / Math.max(q.length, 1) * 100));
+    showShazamResult({
+      success: true,
+      surah: best.surah,
+      ayah:  best.ayah,
+      transcription: { detected: arabicText, similarity_pct: pct }
+    });
   } else {
-    document.getElementById('shzErr').textContent =
-      'Ayat tidak ditemukan di surah yang sedang dibuka. Coba baca lebih jelas atau muat surah lain terlebih dahulu.';
-    document.getElementById('shzErr').style.display = 'block';
-    setShzStatus('Tidak ditemukan — coba lagi');
+    // Berikan info yang berguna — bukan hasil yang salah
+    const loadedSurahs = Object.keys(SURAH_DATA).length;
+    showShzError(
+      `Ayat tidak ditemukan di ${loadedSurahs} surah yang ter-load.<br><br>` +
+      `Yang terdengar: <span style="font-family:var(--ffa);font-size:14px;direction:rtl">${arabicText}</span><br><br>` +
+      `Pastikan Whisper API aktif untuk pencarian dari seluruh 114 surah, ` +
+      `atau buka surah yang ingin dicari dulu agar ter-cache.`
+    );
   }
 }
 
@@ -4111,22 +4346,32 @@ function shazamGoToAyah(){
 async function testWhisperApi(){
   const url = (document.getElementById('shzApiUrl').value || '').trim();
   if (!url) return;
-  localStorage.setItem('nurai_whisper_url', url);
+  onWhisperUrlChange(url); // simpan + restart keep-alive
   const st = document.getElementById('shzApiStatus');
   st.textContent = 'Mengecek...'; st.style.color = 'var(--ink4)';
   try {
-    const r = await fetch(`${url}/health`, { signal: AbortSignal.timeout(8000) });
+    const r = await fetch(`${url}/health`, { signal: AbortSignal.timeout(12000) });
     const d = await r.json();
-    if (d.status === 'ok') {
-      st.textContent = '✓ Terhubung — Whisper siap';
+    if (d.status === 'ok' && d.openai_connected !== false) {
+      st.innerHTML = '✓ Terhubung & siap — keep-alive aktif (ping tiap 25 mnt)';
       st.style.color = 'var(--jade2)';
+    } else if (d.status === 'ok') {
+      st.innerHTML = '⚠ Space aktif tapi OpenAI key belum diset di HF Space → Settings → Variables';
+      st.style.color = 'var(--gold)';
     } else {
-      st.textContent = '⚠ Server merespons tapi status tidak OK';
+      st.textContent = '⚠ Server merespons tapi ada masalah';
       st.style.color = 'var(--gold)';
     }
   } catch(e) {
-    st.textContent = '✗ Tidak bisa terhubung — cek URL dan pastikan HF Space aktif';
-    st.style.color = 'var(--red)';
+    if (e.name === 'TimeoutError') {
+      st.innerHTML = '😴 Space sedang Sleeping — sedang membangunkan...<br><small>Coba lagi dalam 30 detik</small>';
+      st.style.color = 'var(--gold)';
+      // Coba bangunkan
+      setTimeout(() => testWhisperApi(), 35000);
+    } else {
+      st.innerHTML = '✗ Tidak terhubung — pastikan URL benar<br><small>' + e.message.slice(0,60) + '</small>';
+      st.style.color = 'var(--red)';
+    }
   }
 }
 
@@ -4134,13 +4379,26 @@ async function checkWhisperStatus(url){
   if (!url) return;
   const st = document.getElementById('shzApiStatus');
   if (!st) return;
+  st.textContent = 'Mengecek...'; st.style.color = 'var(--ink4)';
   try {
-    const r = await fetch(`${url}/health`, { signal: AbortSignal.timeout(5000) });
+    const r = await fetch(`${url}/health`, { signal: AbortSignal.timeout(10000) });
     const d = await r.json();
-    st.textContent = d.status === 'ok' ? '✓ Whisper siap' : '⚠ Cek server';
-    st.style.color = d.status === 'ok' ? 'var(--jade2)' : 'var(--gold)';
+    if (d.status === 'ok' && d.openai_connected) {
+      st.innerHTML = '✓ Whisper siap digunakan';
+      st.style.color = 'var(--jade2)';
+    } else if (d.status === 'ok' && !d.openai_connected) {
+      st.innerHTML = '⚠ Space aktif tapi OpenAI key belum diset di HF Settings';
+      st.style.color = 'var(--gold)';
+    } else {
+      st.textContent = '⚠ Server merespons tapi ada masalah';
+      st.style.color = 'var(--gold)';
+    }
   } catch(e) {
-    st.textContent = '✗ Belum terhubung';
+    if (e.name === 'TimeoutError') {
+      st.innerHTML = '😴 HF Space sedang Sleeping — <a href="' + url + '" target="_blank" style="color:var(--jade2)">klik untuk bangunkan</a>';
+    } else {
+      st.innerHTML = '✗ Tidak bisa terhubung — cek URL';
+    }
     st.style.color = 'var(--red)';
   }
 }
